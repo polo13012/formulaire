@@ -1,0 +1,144 @@
+* {
+  padding: 1vh;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background: url("https://image.freepik.com/vecteurs-libre/fond-abstrait-formes-blanches_79603-1362.jpg");
+}
+#form {
+  margin: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 45px;
+}
+.formulaire {
+  border: 1px solid;
+  justify-content: space-around;
+  display: flex;
+  border-radius: 10px;
+}
+.adress {
+  position: relative;
+
+  flex-direction: column;
+  width: 15%;
+}
+/* .tel,.adresse{
+    border: none;
+} */
+#presentation {
+  display: flex;
+  position: relative;
+  /* padding-left: 20vw; */
+  /* margin-top: -20vh; */
+}
+
+.btn {
+  background: chartreuse;
+  color: lightslategray;
+  border: none;
+}
+@media (max-width: 1145px) {
+  body {
+    background: url("https://i.pinimg.com/originals/de/af/2a/deaf2a5ffe85d78598d0917695af02ec.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .formulaire {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+  }
+  #form {
+    padding-left: 30vw;
+  }
+  #present{
+    width: 32vw;
+    height: 35vh;
+  }
+}
+@media (max-width: 780px) {
+  .adress {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: aqua;
+  }
+  .formulaire {
+    display: flex;
+    width: 30vw;
+  }
+  label {
+    color: aqua;
+  }
+  #present {
+    width: 29vw;
+    height: 25vh;
+  }
+  h1 {
+    color: aqua;
+    font-size: 25px;
+    align-items: center;
+  }
+}
+@media (max-width: 450px) {
+  .formulaire{
+    font-size: 10px;}
+  .birthday {
+    font-size: 10px;
+  }
+  .prename {
+    font-size: 10px;
+  }
+  .mail {
+    font-size: 10px;
+  }
+  .prename {
+    font-size: 10px;
+  }
+  .adress{font-size:10px;
+  }
+  .adresse{
+    width:28vw;
+    font-size: 10px;
+  }
+  .tel{
+    width: 28vw;
+    font-size: 10px;
+  }
+}
+@media (max-width: 300px) {
+  body {
+    background: url("https://images.ladepeche.fr/api/v1/images/view/5c33dc878fe56f71166ac94a/large/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 500px;
+  }
+  .adress {
+    width: 0;
+    display: none;
+    height: 0;
+  }
+  .formulaire {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  #form,
+  #presentation {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FORMULAIRE</title>
+  </head>
+  <body>
+    <h1>Formulaire d'inscription</h1>
+
+    <form id="form">
+      <div class="formulaire">
+      <label for="name" id="name">Nom:</label>
+      <input type="text" placeholder="Tapez votre nom" class="nom" required />
+
+      <label for="prenom" id="prenom">Prénom:</label>
+      <input
+        type="text"
+        placeholder="Tapez votre prénom"
+        class="prename"
+        required
+      />
+      <label for="date" id="date">date de naissance:</label>
+      <input type="date" class="birthday" required />
+
+      <label for="email" id="email">Email:</label>
+      <input
+        type="email"
+        class="mail"
+        placeholder="exemple@toto.com"
+        required
+      />
+    </div>
+
+    <div class="adress">
+      <label for="adresse" id="bp">adresse postale:</label>
+      <input class="adresse" type="text" placeholder="N°-- A------ xxxxx 13012 MARSEILLE" required />
+      <label for="tel" id="tel">Portable:</label>
+      <input class="tel" type="tel" placeholder="01 23 45 67 89" required />
+      <label for="tel" id="telephone">Telephone fixe:</label>
+      <input class="tel" type="tel" placeholder="01 23 45 67 89" required />
+     </div> 
+    <div class="presentation">
+      <label for="presentation">Présentez vous:</label><br>
+ <textarea name="presentation" id="present" cols="50" rows="12"></textarea>
+
+    </div>
+    <div class="button">
+    <button class="btn" type="submitt" id="submit">valider</button></div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
